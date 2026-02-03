@@ -117,6 +117,7 @@ export default function Projects() {
             <div className="card-section-title">References</div>
             <div className="ref-links">
               <ReferenceLink label="Season Journey" href="https://www.youtube.com/watch?v=W9iGtA6Yp8U" />
+              <ReferenceLink label="Engineering Portfolio" href="https://drive.google.com/file/d/1xDdoY6q2QWFU1PXoL7MWxUb_1QckdQeH/view?usp=sharing" />
             </div>
           </div>
           <div>
