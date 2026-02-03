@@ -1,29 +1,15 @@
-"use client";
-
-export default function ImageTile({
-  src,
-  alt,
-  caption,
-}: {
+type Props = {
   src?: string;
   alt: string;
   caption?: string;
-}) {
-  const hasImage = Boolean(src);
+};
+
+export default function ImageTile({ src, alt, caption }: Props) {
+  const isPlaceholder = !src;
 
   return (
-    <div className={`image-tile ${hasImage ? "" : "placeholder"}`}>
-      {hasImage && (
-        <img
-          src={src}
-          alt={alt}
-          onError={(e) => {
-            e.currentTarget.style.display = "none";
-            e.currentTarget.parentElement?.classList.add("placeholder");
-          }}
-        />
-      )}
-
+    <div className={`image-tile${isPlaceholder ? " placeholder" : ""}`}>
+      {src ? <img src={src} alt={alt} loading="lazy" /> : null}
       {caption ? <div className="image-caption">{caption}</div> : null}
     </div>
   );
