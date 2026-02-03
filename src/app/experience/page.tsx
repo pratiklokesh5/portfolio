@@ -92,7 +92,8 @@ export default function Experience() {
                 caption="IJAVVE FTC (2025)"
               />
               <ImageTile
-                caption="Team testing session"
+                src="/experience/experience-9.jpg"
+                caption="IJAVVE FTC 2026 Robot competing at 2/1/26 tournament"
                 alt="Team testing session"
               />
             </div>
