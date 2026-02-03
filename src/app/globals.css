@@ -291,6 +291,46 @@ p {
   pointer-events: none;
 }
 
+/* Ensure caption sits ABOVE the image */
+.gallery-grid .gallery-item {
+  position: relative;
+}
+
+.gallery-grid .gallery-item img {
+  position: relative;
+  z-index: 0;
+}
+
+.gallery-grid .gallery-caption {
+  z-index: 2; /* <- key */
+}
+
+/* Required for next/image fill */
+.gallery-grid .gallery-item {
+  position: relative;
+}
+
+.lightbox-inner {
+  position: relative;
+}
+
+
+/* Show caption on hover OR keyboard focus (tap/click often gives focus) */
+.gallery-grid .gallery-item:focus .gallery-caption,
+.gallery-grid .gallery-item:focus-within .gallery-caption {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* On mobile (no hover), show caption by default */
+@media (hover: none) {
+  .gallery-grid .gallery-caption {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
 .gallery-item:hover .gallery-caption {
   opacity: 1;
   transform: translateY(0);
