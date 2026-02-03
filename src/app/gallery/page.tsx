@@ -11,7 +11,7 @@ export default function Gallery() {
   return (
     <section className="page page-wide">
       <h1>Gallery</h1>
-      <p className="subtitle">A collection of photos I’ve captured. Click to expand!</p>
+      <p className="subtitle">A collection of photos I’ve captured.</p>
 
       <GalleryGrid photos={photos} />
     </section>

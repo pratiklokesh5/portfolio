@@ -36,29 +36,6 @@ export default function GalleryGrid({ photos }: { photos: Photo[] }) {
           </button>
         ))}
       </div>
-
-      {active && (
-        <div className="lightbox" onClick={() => setActive(null)} role="dialog">
-          <div className="lightbox-inner" onClick={(e) => e.stopPropagation()}>
-            <Image
-              src={active.src}
-              alt={active.caption}
-              fill
-              sizes="100vw"
-              priority
-            />
-            <div className="lightbox-caption">{active.caption}</div>
-            <button
-              className="lightbox-close"
-              onClick={() => setActive(null)}
-              type="button"
-              aria-label="Close"
-            >
-              ✕
-            </button>
-          </div>
-        </div>
-      )}
     </>
   );
 }
