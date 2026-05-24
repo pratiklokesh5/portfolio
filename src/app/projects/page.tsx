@@ -24,25 +24,39 @@ export default function Projects() {
     <section className="page">
       <h1>Projects</h1>
 
-      {/* TerraEd */}
       <div className="card">
-        <h2>Cadence EDA</h2>
-        <p>ECE 174 | January 2026 - Present</p>
+        <h2>Smart Irrigation System - "Plant Doctor"</h2>
+        <p>ECE 167 | February 2026 - March 2026</p>
         <p>
-          In ECE 174, I have been working extensively with Cadence tools to design, analyze, and verify analog and mixed-signal circuits. My work so far has involved schematic capture in Cadence Capture, circuit simulation and analysis, and iterative refinement based on performance metrics such as gain, bandwidth, stability, and operating point behavior. I have focused on translating theoretical circuit concepts into implementable designs, validating functionality through simulation, and debugging design issues at the schematic level. The course has emphasized disciplined circuit design methodology, attention to device-level behavior, and verification prior to layout, strengthening my practical skills in professional EDA workflows.
+          Plant Doctor is an embedded plant-monitoring and irrigation system built on the STM32 platform for ECE 167: Sensing and Sensor Technologies. The project combines capacitive soil moisture sensing, directional light sensing with a photodiode array, and automated irrigation through a PWM-controlled DC water pump to create a real-time “Plant Vitals” system. I worked primarily on the pump subsystem, designing both the transistor-based motor driver hardware and the embedded C motor-control module used for PWM power control and timed watering. The system continuously reads sensor data, calibrates and filters measurements, displays plant status on an LCD/OLED interface, and automatically waters the plant when soil conditions become too dry. This project gave me hands-on experience with embedded systems integration, ADC sensing, state-machine design, PWM motor control, hardware debugging, and combining mechanical, electrical, and software systems into a single functional product.
         </p>
-
         <div className="card-meta">
           <div>
             <div className="card-section-title">Images</div>
             <div className="image-row">
-              <ImageTile src="/project/project-2.png" alt="Wireless Transmitter" caption="Wireless Transmitter Capture"/>
             </div>
           </div>
         </div>
       </div>
 
-      {/* TerraEd */}
+      <div className="card">
+        <h2>Cadence EDA</h2>
+        <p>ECE 174 | January 2026 - Present</p>
+        <p>
+          In ECE 174, I have been working extensively with Cadence tools to design, analyze, and verify analog and mixed-signal circuits. My work so far has involved schematic capture in Cadence Capture, circuit simulation and analysis, and iterative refinement based on performance metrics such as gain, bandwidth, stability, and operating point behavior. I have focused on translating theoretical circuit concepts into implementable designs, validating functionality through simulation, and debugging design issues at the schematic level. The course has emphasized disciplined circuit design methodology, attention to device-level behavior, and verification prior to layout, strengthening my practical skills in professional EDA workflows. As a culminating project, I independently designed and fabricated a single-board solar-powered battery charger featuring discrete analog power electronics, MOSFET-based switching circuitry, and custom PCB layout. This project strengthened my understanding of end-to-end hardware development, from circuit conception and simulation to PCB manufacturing and physical assembly.
+        </p>
+        <div className="card-meta">
+          <div>
+            <div className="card-section-title">Images</div>
+            <div className="image-row">
+              <ImageTile src="/project/project-2.png" alt="Wireless Transmitter" caption="Wireless Transmitter Capture"/>
+              <ImageTile src="/project/project-11.png" alt="Battery Charger PCB" caption="Battery Charger PCB"/>
+              <ImageTile src="/project/project-12.jpg" alt="Battery Charger PCB" caption="Physical PCB"/>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div className="card">
         <h2>Custom PID Control for Competitive FLL via Python</h2>
         <p> August 2025 </p>
@@ -52,7 +66,6 @@ export default function Projects() {
         </div>
       </div>
       
-      {/* TerraEd */}
       <div className="card">
         <h2>Photovoltaic Stop Sign System</h2>
         <p>ECE 180J | March - June 2025</p>
@@ -78,7 +91,6 @@ export default function Projects() {
         </div>
       </div>
 
-      {/* TerraEd */}
       <div className="card">
         <h2>DIY Motor</h2>
         <p>Physics 7B | Novemeber - December 2024</p>
@@ -104,7 +116,6 @@ export default function Projects() {
         </div>
       </div>
 
-      {/* TerraEd */}
       <div className="card">
         <h2>PowerPlay FTC Robot</h2>
         <p>FIRST Tech Challenge | September 2022 - July 2023</p>
