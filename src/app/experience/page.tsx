@@ -13,6 +13,7 @@ export default function Experience() {
     <section className="page">
       <h1>Experience</h1>
 
+      {/* TerraEd */}
       <div className="card">
         <h2>Founder and Head Coach</h2>
         <p>TerraEd • June 2023 – Present</p>
