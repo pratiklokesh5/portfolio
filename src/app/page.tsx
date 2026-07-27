@@ -34,7 +34,7 @@ export default function Home() {
                 <div>
                   <div className="card-section-title">Links</div>
                   <div className="ref-links">
-                    <ReferenceLink label="Resume" href="https://drive.google.com/file/d/1wexUwqUeGLNvnu1_5VjresJHzIIYAm3S/view?usp=sharing" />
+                    <ReferenceLink label="Resume" href="https://drive.google.com/file/d/1FCy3-2G5qyUgj2muaGAfWMQ0bV6pEY5u/view?usp=drive_link" />
                     <ReferenceLink label="LinkedIn" href="https://www.linkedin.com/in/pratiklokesh5/" />
                     <ReferenceLink label="Photography Account" href="https://www.instagram.com/jpg.pratik/" />
                   </div>
